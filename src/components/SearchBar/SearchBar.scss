@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+.search-bar {
+  display: flex;
+  position: relative;
+
+  .button {
+    margin-left: 8px;
+  }
+
+  &_results {
+    background-color: $light;
+    box-shadow: 0 2px 3px rgba(91, 91, 91, 0.075),
+      0 4px 6px rgba(91, 91, 91, 0.1);
+    position: absolute;
+    padding: 16px;
+    top: calc(100% + 8px);
+    left: 0;
+    z-index: 1;
+
+    div {
+      padding: 8px 16px;
+      cursor: pointer;
+      &:hover {
+        background-color: $light-border;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/mixins.scss";
+
+.image-hero {
+  position: relative;
+  overflow: hidden;
+
+  &-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  &-title {
+    font-size: 32px;
+    text-align: center;
+    padding: 16px;
+
+    @include brkpt(sm) {
+      font-size: 48px;
+    }
+  }
+}

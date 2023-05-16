@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+.post {
+  h1 {
+    border-bottom: 1px solid $primary-border;
+    margin-bottom: 32px;
+  }
+  img {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 32px;
+    padding-left: 32px;
+    border-left: 1px solid $light-border;
+  }
+
+  &-images {
+    display: flex;
+  }
+
+  &-videos {
+    margin: 32px 0;
+    padding-left: 32px;
+    border-left: 1px solid $light-border;
+  }
+
+  &-actions {
+    border-top: 1px solid $primary-border;
+    padding-top: 32px;
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/mixins.scss";
+
+.logo {
+  &-image {
+    max-width: 200px;
+
+    @include brkpt(sm) {
+      max-width: 240px;
+    }
+  }
+  h1 {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+}

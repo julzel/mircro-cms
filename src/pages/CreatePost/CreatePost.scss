@@ -1,0 +1,42 @@
+@import "../../styles/mixins.scss";
+
+.create-post {
+  .post-sections {
+    @include brkpt(lg) {
+      display: flex;
+    }
+
+    .post-content {
+      @include brkpt(lg) {
+        width: 50%;
+      }
+    }
+
+    .post-media {
+      @include brkpt(lg) {
+        width: 50%;
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .input-group {
+    margin-bottom: 16px;
+
+    label span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    input {
+      margin-bottom: 16px;
+    }
+
+    textarea {
+      min-height: 400px;
+    }
+  }
+}

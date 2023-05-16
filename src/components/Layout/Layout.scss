@@ -1,0 +1,10 @@
+@import "../../styles/mixins.scss";
+.layout {
+  .main {
+    padding: 32px 16px;
+
+    @include brkpt(sm) {
+      padding: 48px;
+    }
+  }
+}

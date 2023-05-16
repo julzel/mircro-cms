@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+.text-area {
+  border: 1px solid $light-border;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px 16px;
+  transition: all 200ms ease-out;
+  width: 100%;
+  outline: none;
+  resize: none;
+
+  &:focus {
+    border-color: $secondary-border;
+  }
+}

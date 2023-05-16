@@ -1,0 +1,32 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/variables.scss";
+
+.article {
+  padding: 32px 0;
+
+  &-title {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $primary-border;
+  }
+
+  &-content {
+    display: flex;
+    flex-flow: column-reverse;
+    padding-top: 16px;
+
+    @include brkpt(sm) {
+      flex-flow: row;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    margin-bottom: 16px;
+
+    @include brkpt(sm) {
+      width: 320px;
+      margin: 0 32px;
+    }
+  }
+}

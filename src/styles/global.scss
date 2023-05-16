@@ -1,0 +1,46 @@
+@import "./variables.scss";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: $primary-text;
+}
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $primary-text;
+  text-decoration: none;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.link-button {
+  border: 1px solid $primary-text;
+  display: inline-block;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: $primary-text;
+    color: $secondary-text;
+  }
+}

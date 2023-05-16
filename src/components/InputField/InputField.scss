@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+.input-field {
+  border: 1px solid $light-border;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px 16px;
+  transition: all 200ms ease-out;
+  width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: $secondary-border;
+  }
+}
